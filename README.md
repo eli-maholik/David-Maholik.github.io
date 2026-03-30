@@ -1,4 +1,6 @@
-# Eli Maholik
+---
+title: Eli Maholik
+---
 
 This ePortfolio showcases my work throughout the Computer Science capstone, including my code review, software enhancements, and reflections on the program outcomes I have achieved.
 
