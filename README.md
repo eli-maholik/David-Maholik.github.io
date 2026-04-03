@@ -21,8 +21,11 @@ This section highlights the enhancements I made to my Android inventory applicat
 ### Application Screenshots
 Below are examples of the enhanced user interface and functionality of the application.
 
-#### Inventory Screen
-![Inventory Screen](inventory.jpg)
+<p align="center">
+  <img src="inventory.jpg" width="250"/>
+  <img src="search.jpg" width="250"/>
+  <img src="filter.jpg" width="250"/>
+</p>
 
 ### Enhanced Application Code
 [View Enhanced Code on GitHub](https://github.com/eli-maholik/inventory-application-system)
