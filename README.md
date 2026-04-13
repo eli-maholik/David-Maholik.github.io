@@ -30,34 +30,47 @@ This code review examines my original Android inventory application, discusses i
   </iframe>
 </div>
 
-## Software Design & Engineering Enhancements
-This section highlights the enhancements I made to my Android inventory application to improve its structure, usability, and maintainability. These changes reflect my growth in software design principles and my ability to refactor existing code into a more scalable and user-friendly solution.
+## Technical Enhancements
+This section highlights the enhancements made to my Android inventory application as part of my capstone project. These improvements demonstrate my ability to refine software design, implement efficient algorithms, and develop scalable back-end systems. Together, these enhancements transformed the application from a locally stored system into a more robust, user-friendly, and production-ready solution.
 
-### Application Screenshots
-Below are examples of the enhanced user interface and functionality of the application.
+[View Enhanced Code on GitHub](https://github.com/eli-maholik/inventory-application-system)
+
+### Software Design & Engineering Enhancements
+To improve the overall structure and usability of the application, I refactored key components of the codebase and enhanced the user interface. These changes focused on maintainability, readability, and user experience.
+
+The original implementation contained large methods and repeated logic, particularly within activity classes. I addressed this by breaking down complex methods into smaller, reusable helper functions and consolidating duplicated dialog logic into a unified structure. This improved both code organization and scalability.
+
+From a user interface perspective, I redesigned key elements of the application to create a more modern and intuitive experience. Enhancements included the use of Material Design components such as cards and floating action buttons, improved layout spacing, and clearer visual hierarchy. These changes made the application easier to navigate and more visually appealing.
+
+The following screenshots illustrate the user interface before and after enhancements were implemented.
 
 <p align="center">
   <img src="inventory.jpg" width="250"/>
+  <img src="oldinventory.jpg" width="250"/>
+</p>
+
+### Algorithms & Data Structures Enhancements
+To improve data handling and usability, I implemented several features that rely on core algorithmic concepts, including searching, sorting, and filtering.
+
+A real-time search feature was added to allow users to quickly locate inventory items by name. This required efficient string matching and dynamic updates to the displayed dataset. Additionally, sorting functionality was implemented to organize items based on attributes such as name and quantity, while filtering capabilities allow users to isolate specific subsets of data, such as low inventory items.
+
+These enhancements significantly improved the user experience by reducing the need for manual navigation through large datasets. From a technical standpoint, they reinforced my understanding of how data structures such as lists interact with algorithms to support efficient data manipulation and retrieval.
+
+The following screenshots showscase the implemented search and sorting enhancements.
+
+<p align="center">
   <img src="search.jpg" width="250"/>
   <img src="filter.jpg" width="250"/>
 </p>
 
-### Enhanced Application Code
-[View Enhanced Code on GitHub](https://github.com/eli-maholik/inventory-application-system)
+### Database & Back-End Enhancements
+To expand the scalability and realism of the application, I transitioned from a purely local database to a client-server architecture. The original application used SQLite for local data storage, which was effective for basic functionality but limited in terms of scalability and real-world applicability.
 
-## Algorithms & Data Structures Enhancements
-This section highlights how I enhanced my Android inventory applicaion by applying algorithms and data structures to improve data handling, efficiency, and overall user experience.
+To address this, I developed a back-end server using Node.js and Express, connected to a SQLite database. This allowed the application to handle data more dynamically and simulate a production-like environment. I implemented RESTful API endpoints to manage user authentication and inventory data operations, enabling communication between the mobile application and the server.
 
-### Artifact Overview
-This application allows users to create accounts, log in, and manage inventory items, with features such as adding, editing, deleting items, and receiving SMS notifications when inventory is low. It was built using Java in Android Studio with an SQLite database and a RecyclerView for displaying data.
+Security was a major focus of this enhancement. I implemented password hashing using bcrypt and secured user authentication with JSON Web Tokens (JWT). These measures ensure that sensitive user data is protected and that only authorized users can access application resources.
 
-### Enhancements Implemented
-To improve the functionality and scalability of the application, I implemented the following features:
-- **Search Functionality**: Added a real-time search feature that allows users to quickly locate items by name using string matching and dynamic filtering.
-- **Sorting Algorithms**: Implemented sorting options that allow users to organize inventory items based on attributes such as name and quantity.
-- **Filtering System**: Added filtering capabilities to display subsets of data, such as low inventory items, making it easier to identify important information.
+This transition demonstrated my ability to design and integrate full-stack systems, as well as my understanding of database management, API development, and secure application design.
 
 ### Impact of Enhancements
-These improvements significantly enhanced the usability of the application. Previously, users had to manually scroll through potentially large datasets to find items. With search, sorting, and filtering, users can now interact with data more efficiently and intuitively.
-
-From a technical perspective, these changes required careful consideration of how data is stored, accessed, and updated. Managing the interaction between multiple operations (search, sort, and filtering) reinforced my understanding of how data structures like lists support algorithmic processes.
+Collectively, these enhancements transformed the application into a more scalable and efficient system. The improvements in software design increased maintainability and code quality, the implementation of algorithms enhanced performance and usability, and the integration of a back-end system introduced a more realistic and secure architecture. This work reflects my ability to approach software development holistically, considering not only functionality but also performance, scalability, and security.
