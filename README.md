@@ -45,8 +45,8 @@ From a user interface perspective, I redesigned key elements of the application 
 The following screenshots illustrate the user interface before and after enhancements were implemented.
 
 <p align="center">
-  <img src="inventory.jpg" width="250"/>
   <img src="oldinventory.jpg" width="250"/>
+  <img src="inventory.jpg" width="250"/>
 </p>
 
 ### Algorithms & Data Structures Enhancements
